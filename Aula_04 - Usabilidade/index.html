@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 04 - Criando Tabela com JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Gerador de Tabela Dinâmica</h1>
+    
+    <!-- Inputs para definir o número de linhas, colunas e a cor da borda -->
+    <label for="numLinhas">Número de Linhas:</label>
+    <input type="number" id="numLinhas" min="1">
+    
+    <label for="numColunas">Número de Colunas:</label>
+    <input type="number" id="numColunas" min="1">
+    
+    <label for="corBorda">Cor da Borda:</label>
+    <input type="color" id="corBorda">
+    
+    <br>
+    
+    <!-- Botões para gerar e limpar a tabela -->
+    <button onclick="criarTabela()">Criar Tabela</button>
+    <button onclick="limparTabela()">Limpar</button>
+    
+    <!-- Div onde a tabela será inserida -->
+    <div id="tabelaContainer"></div>
+    
+    <script src="index.js"></script>
+</body>
+</html>

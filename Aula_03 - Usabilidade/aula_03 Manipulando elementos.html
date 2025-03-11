@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manipulação de Input</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+    input {
+      padding: 10px;
+      width: 200px;
+      margin-bottom: 10px;
+    }
+    button {
+      margin: 5px;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+    <h1>Manipulação de Input com JavaScript</h1>
+
+    <!-- Campo de entrada -->
+    <input type="text" id="meuInput" placeholder="Digite algo">
+
+    <br>
+
+    <!-- Botões para modificar as propriedades do input -->
+    <button onclick="alterarPlaceholder()">Alterar Placeholder</button>
+    <button onclick="alterarValor()">Alterar Valor</button>
+    <button onclick="desativarInput()">Ativar/Desativar</button>
+
+  <script>
+    // Função para alterar o placeholder do input
+    function alterarPlaceholder() {
+      document.getElementById("meuInput").placeholder = "Novo Placeholder";
+    }
+
+    // Função para alterar o valor do input
+    function alterarValor() {
+      document.getElementById("meuInput").value = "Texto inserido via JS";
+    }
+
+    // Função para ativar/desativar o input
+    function desativarInput() {
+      let input = document.getElementById("meuInput");
+      input.disabled = !input.disabled;
+    }
+  </script>
+</body>
+</html>

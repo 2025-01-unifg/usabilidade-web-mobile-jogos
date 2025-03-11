@@ -1,0 +1,32 @@
+/* Estilização do container principal */
+.container {
+  max-width: 400px;
+  margin: 50px auto;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.teste {
+  color: rgba(146, 113, 223, 0.918);
+}
+
+/* Estilização dos campos de entrada e do botão */
+input, button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+/* Classe para números menores ou iguais a 100 (verde) */
+.verde {
+  color: green;
+}
+
+/* Classe para números maiores que 100 (vermelho) */
+.vermelho {
+  color: red;
+}
+.movendo {
+  background-color: #ff00ea;
+}

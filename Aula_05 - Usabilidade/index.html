@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 05 - Vários Tipos de Input</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Exemplo de Vários Tipos de Input</h1>
+  <div class="input-container">
+    <!-- Input tipo text -->
+    <label for="inputText">Texto:</label>
+    <input type="text" id="inputText" name="inputText" placeholder="Digite um texto" value="Exemplo">
+
+    <!-- Input tipo password -->
+    <label for="inputPassword">Senha:</label>
+    <input type="password" id="inputPassword" name="inputPassword" placeholder="Digite sua senha">
+
+    <!-- Input tipo number -->
+    <label for="inputNumber">Número:</label>
+    <input type="number" id="inputNumber" name="inputNumber" min="1" max="100" value="10">
+
+    <!-- Input tipo checkbox -->
+    <label>Aceito os termos:</label>
+    <input type="checkbox" id="inputCheckbox" checked>
+
+    <!-- Input tipo radio (duas opções) -->
+    <p>Selecione uma opção (Radio):</p>
+    <label for="radio1">Opção 1</label>
+    <input type="radio" id="radio1" name="inputRadio" value="opcao1" checked>
+    <label for="radio2">Opção 2</label>
+    <input type="radio" id="radio2" name="inputRadio" value="opcao2">
+
+    <!-- Input tipo file -->
+    <label for="inputFile">Selecione um arquivo:</label>
+    <input type="file" id="inputFile" name="inputFile">
+
+    <!-- Input tipo email -->
+    <label for="inputEmail">Email:</label>
+    <input type="email" id="inputEmail" name="inputEmail" placeholder="exemplo@dominio.com">
+
+    <!-- Input tipo url -->
+    <label for="inputURL">URL:</label>
+    <input type="url" id="inputURL" name="inputURL" placeholder="https://www.exemplo.com">
+
+    <!-- Input tipo date -->
+    <label for="inputDate">Data:</label>
+    <input type="date" id="inputDate" name="inputDate">
+
+    <!-- Input tipo time -->
+    <label for="inputTime">Hora:</label>
+    <input type="time" id="inputTime" name="inputTime">
+
+    <!-- Input tipo datetime-local -->
+    <label for="inputDatetime">Data e Hora Local:</label>
+    <input type="datetime-local" id="inputDatetime" name="inputDatetime">
+
+    <!-- Input tipo month -->
+    <label for="inputMonth">Mês:</label>
+    <input type="month" id="inputMonth" name="inputMonth">
+
+    <!-- Input tipo week -->
+    <label for="inputWeek">Semana:</label>
+    <input type="week" id="inputWeek" name="inputWeek">
+
+    <!-- Input tipo color -->
+    <label for="inputColor">Cor:</label>
+    <input type="color" id="inputColor" name="inputColor" value="#ff0000">
+
+    <!-- Input tipo range -->
+    <label for="inputRange">Intervalo (Range):</label>
+    <input type="range" id="inputRange" name="inputRange" min="0" max="100" value="50">
+
+    <!-- Input tipo search -->
+    <label for="inputSearch">Pesquisa:</label>
+    <input type="search" id="inputSearch" name="inputSearch" placeholder="Pesquisar...">
+
+    <!-- Input tipo tel -->
+    <label for="inputTel">Telefone:</label>
+    <input type="tel" id="inputTel" name="inputTel" placeholder="(xx) xxxx-xxxx">
+
+    <!-- Input tipo button --> 
+    <label for="inputButton">Botão:</label>
+    <input type="button" id="inputButton" name="inputButton" value="Clique!">
+
+    <!-- Input tipo submit --> 
+    <label for="inputSubmit">Submit:</label>
+    <input type="submit" id="inputSubmit" name="inputSubmit" value="Enviar">
+
+    <!-- Input tipo reset --> 
+    <label for="inputReset">Reset:</label>
+    <input type="reset" id="inputReset" name="inputReset" value="Limpar">
+
+    <!-- Input tipo hidden (não visível na tela) --> 
+    <input type="hidden" id="inputHidden" name="inputHidden" value="valor escondido">
+  </div>
+
+  <!-- Botão para salvar e exibir os valores dos inputs -->
+  <button id="salvar">Salvar</button>
+
+  <!-- Div onde os valores dos inputs serão exibidos -->
+  <div id="resultado"></div>
+
+  <script src="index.js"></script>
+</body>
+</html>
