@@ -1,0 +1,23 @@
+express(): Cria uma nova instância do aplicativo Express.
+
+app.use(middleware): Adiciona um middleware ao aplicativo. Middleware são funções que interceptam as requisições antes de chegarem às rotas. No exemplo, express.json() é um middleware que analisa o corpo das requisições como JSON.
+
+app.get(path, callback): Define uma rota para o método HTTP GET. O path é o caminho da rota e o callback é a função que será executada quando a rota for acessada.
+
+app.post(path, callback): Define uma rota para o método HTTP POST.
+
+app.put(path, callback): Define uma rota para o método HTTP PUT.
+
+app.delete(path, callback): Define uma rota para o método HTTP DELETE.
+
+req.params: Objeto que contém os parâmetros da rota. No exemplo, req.params.id contém o ID do cliente.
+
+req.body: Objeto que contém o corpo da requisição. No exemplo, req.body.nome e req.body.email contêm o nome e o email do cliente.
+
+res.json(data): Envia uma resposta JSON para o cliente.
+
+res.status(code): Define o código de status da resposta.
+
+res.send(data): Envia uma resposta de texto para o cliente.
+
+app.listen(port, callback): Inicia o servidor na porta especificada.

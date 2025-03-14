@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Página 2</title>
+</head>
+<body>
+    <h1 id="meuTitulo"></h1>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const parametro = urlParams.get('parametro');
+
+        if (parametro) {
+            document.getElementById('meuTitulo').textContent = parametro;
+        }
+    </script>
+</body>
+</html>

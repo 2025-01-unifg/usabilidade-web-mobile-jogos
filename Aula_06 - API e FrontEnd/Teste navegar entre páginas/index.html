@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Página 1</title>
+</head>
+<body>
+    <input type="text" id="meuInput">
+    <button id="meuBotao">Ir para a página 2</button>
+
+    <script>
+        document.getElementById('meuBotao').addEventListener('click', function() {
+            const valor = document.getElementById('meuInput').value;
+            window.location.href = 'index2.html?parametro=' + encodeURIComponent(valor);
+        });
+    </script>
+</body>
+</html>
