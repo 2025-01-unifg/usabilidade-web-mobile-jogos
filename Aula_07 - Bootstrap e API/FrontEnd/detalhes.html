@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DETALHES DO CLIENTE</title>
+</head>
+<body>
+    <h1>Detalhes do cliente</h1>
+    <h1 id="meuTitulo"></h1>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const parametro = urlParams.get('id_cliente');
+
+        if (parametro) {
+            document.getElementById('meuTitulo').textContent = parametro;
+        }
+    </script>
+</body>
+</html>

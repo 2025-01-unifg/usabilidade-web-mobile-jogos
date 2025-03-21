@@ -1,0 +1,18 @@
+>>> Antes de executar esse projeto em seu computador, verifique se o node.js está instalado com os comandos:
+node -v
+npm -v
+
+>>> Após verificar as versões, instale os pacotes que estão no package.json com o comando abaixo (lembrando que precisa estar dentro da pasta para executar esse comando):
+npm install
+
+>>> Para rodar o projeto execute:
+node api.js
+
+>>> Para parar o servidor use:
+ctrl + c
+
+Link para baixar o Insomnia:
+https://insomnia.rest/download
+
+Link para baixar o axios:
+https://axios-http.com/ptbr/docs/intro
